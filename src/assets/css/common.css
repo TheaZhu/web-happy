@@ -1,0 +1,44 @@
+@import "icons.css";
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  margin: 0;
+
+  /*IE scrollbar*/
+  scrollbar-arrow-color: #fff;
+  scrollbar-face-color: #333;
+  scrollbar-3dlight-color: #121212;
+  scrollbar-highlight-color: #2c2c2c;
+  scrollbar-shadow-color: #121212;
+  scrollbar-darkshadow-color: #0a0a0a;
+  scrollbar-track-color: #242424;
+  scrollbar-base-color: #121212;
+}
+
+.clickable {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+#app-root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}

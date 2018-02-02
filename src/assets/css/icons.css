@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('../fonts/iconfont.eot?v=1.0.0');
+  src: url('../fonts/iconfont.eot?v=1.0.0') format('embedded-opentype'),
+  url('../fonts/iconfont.woff?v=1.0.0') format('woff'),
+  url('../fonts/iconfont.ttf?v=1.0.0') format('truetype'),
+  url('../fonts/iconfont.svg?v=1.0.0') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: "iconfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e616";
+}
+
+.icon-right:before {
+  content: "\e62f";
+}
+
+.icon-wrong:before {
+  content: "\e630";
+}
