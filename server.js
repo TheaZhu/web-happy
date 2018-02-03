@@ -27,10 +27,10 @@ app.use(webpackHotMiddleware(compiler, {
   heartbeat: 2000
 }));
 
-app.use('/config', proxyMiddleware(proxyOptions.config));
-app.use('/user', proxyMiddleware(proxyOptions.user));
-app.use('/msg', proxyMiddleware(proxyOptions.msg));
-app.use('/answer', proxyMiddleware(proxyOptions.answer));
+app.use('/cddh/config', proxyMiddleware(proxyOptions.config));
+app.use('/cddh/user', proxyMiddleware(proxyOptions.user));
+app.use('/cddh/msg', proxyMiddleware(proxyOptions.msg));
+app.use('/cddh/answer', proxyMiddleware(proxyOptions.answer));
 
 app.get(/\.(png|jpg|gif)$/, (req, res) => {
   res.sendFile(path.join(__dirname, req.url));

@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { get, post } from '../util/service';
 import uris from '../util/uris';
 
-import './App.less';
+import './AutoAnswer.less';
 
-const prefixCls = 'app';
+const prefixCls = 'auto-answer';
 
-export default class App extends Component {
+export default class AutoAnswer extends Component {
   
   constructor(props) {
     super(props);
@@ -16,6 +16,7 @@ export default class App extends Component {
     };
     
     this.questions = {};
+    this.count = 0;
     
     this.fetchMsg = this.fetchMsg.bind(this);
     this.interval = setInterval(this.fetchMsg, 1000);
@@ -43,7 +44,7 @@ export default class App extends Component {
   }
   
   submitAnswer(displayOrder, option, questionId) {
-    post(uris.submitAnswer(), {
+    post(uris.submitCddhAnswer(), {
       option,
       questionId
     })
@@ -55,7 +56,10 @@ export default class App extends Component {
             order: displayOrder,
             state: '答题失败'
           });
-          clearInterval(this.interval);
+          this.count = this.count + 1;
+          if (this.count >= 3) {
+            clearInterval(this.interval);
+          }
         } else {
           console.log('答题成功');
           questions.push({

@@ -1,0 +1,41 @@
+.app-list {
+  max-width: 420px;
+  min-width: 360px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 32px 20px;
+  background: url(../assets/images/bg.png) right top / contain no-repeat rgb(50, 21, 121);
+
+  &-title {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .app-item {
+    padding: 12px 24px;
+    border-radius: 50px;
+    margin-top: 12px;
+    line-height: 28px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #aba7ab;
+
+    &-active {
+      background-color: #ff564f;
+      color: #ffffff;
+
+      .app-item-title {
+        font-weight: bold;
+      }
+    }
+
+    &-title {
+      font-size: 18px;
+    }
+
+    &-arrow {
+      font-size: 22px;
+      float: right;
+    }
+  }
+}

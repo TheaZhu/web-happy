@@ -22,6 +22,14 @@
   content: "\e616";
 }
 
+.icon-arrow-right-fill:before {
+  content: "\e617";
+}
+
+.icon-back:before {
+  content: "\e6bc";
+}
+
 .icon-right:before {
   content: "\e62f";
 }

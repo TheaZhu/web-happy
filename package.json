@@ -1,7 +1,7 @@
 {
-  "name": "template-react-webpack",
+  "name": "web-happy",
   "version": "1.0.0",
-  "description": "template with react and webpack",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "8.0.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-import": "^1.6.3",

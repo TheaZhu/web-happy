@@ -1,0 +1,242 @@
+.app-details {
+  max-width: 400px;
+  min-width: 340px;
+  min-height: 100%;
+  padding: 20px 0 32px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(../assets/images/bg.png) right top / contain no-repeat rgb(50, 21, 121);
+
+  &-root {
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &-dan {
+    height: 100%;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+
+    iframe {
+      height: 100%;
+      width: 100%;
+      border-width: 0;
+    }
+  }
+
+  &-toolbar {
+    position: relative;
+    padding: 0 20px;
+    line-height: 32px;
+    height: 32px;
+
+    a {
+      color: #ffffff; // #FEE524;
+    }
+
+    a:hover {
+      color: #FEE524;
+    }
+
+    &-back {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      border-radius: 40px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &-search {
+      display: inline-block;
+      float: right;
+      color: #ffffff;
+      text-align: right;
+      font-size: 12px;
+
+      .ant-switch-small {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .ant-switch-checked {
+        background-color: #FEE524;
+      }
+
+      &-text {
+        line-height: 16px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .app-session {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+
+    .app-title {
+      display: inline-block;
+      vertical-align: -1px;
+    }
+
+    &-status {
+      border-radius: 20px;
+      padding: 0 8px;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: 2px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &-underway {
+      background: linear-gradient(90deg, #42e0ae, #56e1b1);
+    }
+
+    &-next-time {
+      background: linear-gradient(90deg, #ffb26d, #ff947a);
+    }
+  }
+
+  .current-question {
+    width: 100%;
+    max-height: 800px;
+    padding: 0 20px;
+    overflow-y: auto;
+    font-size: 16px;
+
+    &-card {
+      width: 100%;
+      min-height: 400px;
+      margin: 0 auto;
+      padding: 10px 20px 20px;
+      background: #fafafa;
+      border-radius: 16px;
+      box-sizing: border-box;
+      box-shadow: 0 20px 20px rgba(25, 0, 87, .3);
+    }
+
+    &-order {
+      color: #000;
+      text-align: center;
+
+      &-divider-left {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(~'50% - 72px');
+        height: 1px;
+        background: rgba(0, 0, 0, .1);
+      }
+
+      &-divider-right {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc(~'50% - 72px');
+        height: 1px;
+        background: rgba(0, 0, 0, .1);
+      }
+    }
+
+    &-number {
+      font-size: 12px;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 12px;
+
+      strong {
+        font-size: 28px;
+        font-weight: 700;
+        padding: 0 10px;
+      }
+    }
+
+    &-desc {
+      margin-top: 10px;
+      text-align: center;
+      color: #000;
+    }
+
+    &-choices {
+      color: #333;
+
+      &-item {
+        margin: 20px 10px 0;
+        padding: 8px 16px;
+        background: #ffffff;
+        line-height: 28px;
+        border-radius: 32px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+
+        &-active {
+          background-color: #1980d9;
+          font-size: 20px;
+          color: #ffffff;
+        }
+
+        &-flag {
+          float: right;
+
+          &-right {
+            color: #08ffb5;
+            font-size: 22px;
+          }
+
+          &-wrong {
+            color: #e84e2f;
+            font-size: 20px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 16px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(25, 0, 87, .3);
+
+    .order {
+      display: flex;
+      align-items: center;
+      color: #000;
+      margin-top: 34px;
+    }
+
+    .result {
+      color: #00d2cf;
+      font-size: 20px;
+      padding: 0 25px;
+      word-break: break-all;
+    }
+  }
+
+  .progress {
+    animation: anim 2s .5s infinite;
+  }
+
+  @keyframes anim {
+    0% {
+      background: rgba(0, 219, 184, .2);
+    }
+
+    100% {
+      background: rgba(0, 219, 184, 0);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

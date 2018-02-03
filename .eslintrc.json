@@ -1,5 +1,5 @@
 {
-  "extends": "airbnb",
+  "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 6,
@@ -32,11 +32,14 @@
     "max-len": ["error", {"code": 200}],
     "no-cond-assign": ["error", "always"],
     "no-console": ["off"],
+    "no-extend-native": ["off"],
     "no-mixed-operators": ["off"],
     "no-nested-ternary": ["off"],
     "no-plusplus": ["off"],
     "no-undef": ["off"],
+    "object-curly-newline": ["off"],
     "quotes": ["error", "single"],
+    "quote-props": ["off"],
     "react/forbid-prop-types": ["error", {"forbid": ["any"]}],
     "react/jsx-closing-bracket-location": ["off"],
     "react/jsx-filename-extension": ["off"],
